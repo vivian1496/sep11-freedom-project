@@ -6,7 +6,7 @@
 
   ### Tinkering
 
-  ##### I have been tinkering with Kaboom.js by
+  ##### I have been tinkering with Kaboomjs.com by
 
 
 [Next](entry02.md)

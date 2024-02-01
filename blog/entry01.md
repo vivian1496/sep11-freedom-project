@@ -6,8 +6,9 @@
 
   ### Tinkering
 
-  ##### I have been tinkering with Kaboom.js in my ide. I did the process of downloading kamboom onto my computer and all those steps. This made it easier to code since now my computer undertsand what im telling it to do. However, i am having trouble with the code doing what i want it to do. 
+  ##### I have been tinkering with Kaboom.js in my ide. I did the process of downloading kamboom onto my computer and all those steps. This made it easier to code since now my computer undertsand what im telling it to do. However, i am having trouble with the code doing what i want it to do.
 
+  ##### I have been tinkering with Kaboomjs.com by
 
 
 [Next](entry02.md)

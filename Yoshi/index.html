@@ -1,16 +1,36 @@
-<script type="module">
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
-    kaboom();
-
-
-    add([
        
-        pos(120, 80),
-    ]);
+    </head>
+    <body>
+        <!-- HTML -->
 
-    </script>
+
+        <!-- JS -->
+        <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+        <script src="script.js">   </script>
+
+            <script type = "module">
+
+
+                import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+                add([
+                     text("hello"),
+                    pos(120, 80),
+                                    ]);
+
+</script>
+
+    </body>
+</html>

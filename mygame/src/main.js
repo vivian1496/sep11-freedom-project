@@ -96,9 +96,9 @@ enemy.onCollide("player", (player) => {
 const numClouds = 3;
 const cloudWidth = width() / numClouds;
 
-// Add clouds in a straight line at the top of the screen
+// Adds clouds in a straight line at the top of the screen
 for (let i = 0; i < numClouds; i++) {
-    const cloudX = (i + 0.4) * cloudWidth; // Calculate x position for each cloud
+    const cloudX = (i + 0.4) * cloudWidth; // Calculates x position for each cloud
     add([
         sprite("cloud"),
         pos(cloudX, 1), // Clouds are positioned at y = 1

@@ -2,7 +2,7 @@
 
 Tool: kamboom.js
 
-Project: Dinsour game
+Project: bear game
 
 ---
 
@@ -23,7 +23,11 @@ Project: Dinsour game
 Easy JavaScript Game Development with Kaboom.js (Mario, Zelda, and Space Invaders) - Full Course {freecodecamp.org (youtube)}
 
 
-        - This video convinced me to use replit in order to get familar with the code. 
+        - This video convinced me to use replit in order to get familar with the code.
+
+ My attempt at using the link to start kamboom in my IDE isnt really working (the game won't show up whenever i do http-server) so i am going to download kamboom
+  into my computer. Wait nvm, i added "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js" and it showed up.
+
 
 
 <!--

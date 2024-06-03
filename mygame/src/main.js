@@ -36,7 +36,7 @@ for (let i = 0; i < numGrass; i++) {
     ]);
 }
 
-const SPEED = 120;
+const SNOOPYSPEED = 120;
 const VILLAINSPEED = 140;
 
 // Creates snoopy
@@ -50,47 +50,57 @@ const main = add([
 
 // snoopy movement
 onKeyDown("left", () => {
-    main.move(-SPEED, 0);
+    main.move(-SNOOPYSPEED, 0);
 });
 onKeyDown("right", () => {
-    main.move(SPEED, 0);
+    main.move(SNOOPYSPEED, 0);
 });
 onKeyDown("up", () => {
-    main.move(0, -SPEED);
+    main.move(0, -SNOOPYSPEED);
 });
 onKeyDown("down", () => {
-    main.move(0, SPEED);
+    main.move(0, SNOOPYSPEED);
 });
 
 // Create Bowser
 const bowser = add([
     sprite("bowser"),
     pos(400, 300),
+    offscreen({ destroy: true }),
     scale(0.7),
     area(),
+   // follow(obj: snoopy | null, offset?: Vec2)
 ]);
 
 
 
 
-// ---------
 
-    // makes Bowser chase snoopy
-    bowser.action(() => {
-        const direction = main.pos.sub(bowser.pos).unit(); // Calculate the unit vector towards snoopy
-        bowser.move(direction.scale(VILLAINSPEED * dt()));  // Move Bowser towards snoopy, scaled by delta time
-    });
 
-    // Collision detection
-    main.collides("bowser", () => {
-        add([
-            text("Caught by Bowser! Game Over.", { size: 24, color: rgb(255, 0, 0) }),
-            pos(center()),
-            origin("center"),
-        ]);
-        destroy(main);  // Removes snoopy
-        wait(2, () => {
-            go("game");  // Restarts the game
-        });
-    });
+// ----------------------
+
+//  makes Bowser chase snoopy
+  bowser.move(() => {
+      const direction = main.pos.sub(bowser.pos).unit(); // Calculate the unit vector towards snoopy
+      bowser.move(direction.scale(VILLAINSPEED * dt()));  // Move Bowser towards snoopy
+ });
+
+// Collision detection
+// // main.collides("bowser", () => {
+// //     add([                                                             //red
+// //         text("Caught by Bowser! Game Over.", { size: 24, color: rgb(255, 0, 0) }),
+// //         pos(center()),
+// //         origin("center"),
+// //     ]);
+
+
+
+
+//     destroy(main);  // Removes snoopy
+//     wait(2, () => {
+//         go("game");  // Restarts the game
+
+// });
+// });
+
 
